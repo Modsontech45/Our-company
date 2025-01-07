@@ -88,28 +88,33 @@ th, td {
 }
 
 /* Style for Total Income label */
-.Total_Income {
+.Total_Income,.name_header, .net_profit_percent_header {
     color: #007BFF; /* Blue color */
     font-weight: 700;
+    text-transform: capitalize;
 }
 
 /* Style for Total Expense label */
-.Total_Expense {
+.Total_Expense, .expense_header {
     color: #dc3545; /* Red color */
+    text-transform: capitalize;
     font-weight: bold;
 }
 
 /* Style for Account Balance label */
-.Net_Profit_Loss {
+.Net_Profit_Loss,.income_header {
     color: #28a745; /* Green color */
+    text-transform: capitalize;
     font-weight: bold;
 }
 
 /* Style for Net Profit Percent label */
-.Net_Profit_Percent {
+.Net_Profit_Percent, .balance_header {
     color: #ffc107; /* Yellow color */
+    text-transform: capitalize;
     font-weight: bold;
 }
+
 
 a{
     text-decoration: none;
