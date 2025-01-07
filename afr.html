@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    <div class="databoard">
+        <h1>Expense Tracker</h1>
+        <p>Our expenses tracker</p>
+        <h2 style="color: blue;">AfR</h2>
+        <div id="spinner" style="display: none;">
+            <div class="loader"></div>
+        </div>
+
+        <div class="form">
+
+
+                <select id="filter" onchange="handleViewChange(event)">
+                    <option value="Total">Total money</option>
+                    <option value="Software">Software</option>
+                    <option value="Hardware">Hardware</option>
+                    <option value="Design">Design</option>
+                    <option value="Others">Others</option>
+                </select>
+
+
+        </div>
+
+    </div>
+
+    <div id="labelContainer">
+        <div class="Total_Income"></div>
+        <div class="Total_Expense"></div>
+        <div class="Net_Profit_Loss"></div>
+        <div class="Net_Profit_Percent"></div>
+      </div>
+      <a href="./index.html">Go back</a>
+    <footer>
+        <p style="color: rgb(80, 79, 76);">&copy; AfR 2025</p>
+    </footer>
+    <script src="afr.js"></script>
+</body>
+</html>

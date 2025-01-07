@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    background-image: url('./download\ \(2\).jpg'); /* Add your image URL here */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  h1{
+    color: #007BFF;
+    font-weight: 800;
+    margin-bottom: 9rem;
+    background-color: #343333;
+    padding: 9px 10px;
+    border-radius: 5px;
+
+  }
+  .all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 4rem;
+    padding-right:4rem ; */
+  }
+
+  .container {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Adds a semi-transparent background for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 60%;
+  }
+
+  .buttons {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    padding-left: 4rem ;
+    padding-right: 4rem;
+  }
+
+  button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .quote-container {
+    margin-top: 30px;
+  }
+
+  #quote {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  #author {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+  }
