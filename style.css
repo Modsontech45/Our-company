@@ -1,7 +1,8 @@
+/* Base styles (unchanged from your original CSS) */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
-    background-image: url('./download\ \(2\).jpg'); /* Add your image URL here */
+    background-image: url('./download (2).jpg'); /* Add your image URL here */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -10,8 +11,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-  }
-  #background-video {
+}
+#background-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -19,45 +20,38 @@ body {
     height: 100%;
     object-fit: cover; /* Ensures the video covers the entire screen */
     z-index: -1; /* Puts the video behind other content */
-  }
-  h1{
+}
+h1 {
     color: #007BFF;
     font-weight: 800;
     margin-bottom: 2rem;
-   margin-left: 2rem;
+    margin-left: 2rem;
     background-color: #343333;
     padding: 9px 10px;
     border-radius: 5px;
-
-  }
-  .all{
+}
+.all {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding-left: 4rem;
-    padding-right:4rem ; */
-  }
-
-  .container {
+}
+.container {
     text-align: center;
     padding: 20px;
     background: rgba(255, 255, 255, 0.8); /* Adds a semi-transparent background for readability */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     width: 60%;
-  }
-
-  .buttons {
+}
+.buttons {
     margin-bottom: 40px;
     display: flex;
     justify-content: center;
     gap: 1rem;
-    padding-left: 3rem ;
-
-  }
-
-  button {
+    padding-left: 3rem;
+}
+button {
     background-color: #007BFF;
     color: white;
     padding: 10px 20px;
@@ -66,24 +60,56 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-  }
-
-  button:hover {
+}
+button:hover {
     background-color: #0056b3;
-  }
-
-  .quote-container {
+}
+.quote-container {
     margin-top: 30px;
-  }
-
-  #quote {
+}
+#quote {
     font-size: 24px;
     font-weight: bold;
     color: #333;
-  }
-
-  #author {
+}
+#author {
     font-size: 14px;
     color: #777;
     margin-top: 10px;
-  }
+}
+
+/* Responsive styles for iPhone X */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-device-pixel-ratio: 3) {
+
+    body {
+        height: 100vh;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 20px;
+        margin-bottom: 1.5rem;
+        margin-left: 1rem;
+        padding: 7px 8px;
+    }
+    .container {
+        width: 80%;
+        padding: 15px;
+    }
+    .buttons {
+        flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+        padding-left: 0;
+    }
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    #quote {
+        font-size: 20px;
+    }
+    #author {
+        font-size: 12px;
+    }
+}
