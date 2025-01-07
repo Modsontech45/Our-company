@@ -101,3 +101,20 @@ const quotes = [
 
   // Display the first quote when the page loads
   displayRandomQuote();
+
+  function checkPasswordAndRedirect() {
+
+    const correctPassword = "mdsmodson";
+
+
+    const enteredPassword = prompt("Please enter your password:");
+
+
+    if (enteredPassword === correctPassword) {
+
+      window.location.href = "admin.html";
+    } else {
+
+      alert("Incorrect password. Please try again.");
+    }
+  }
