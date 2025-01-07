@@ -71,8 +71,8 @@ const quotes = [
     { quote: "The harder you work, the luckier you get.", author: "Modson" },
     { quote: "It’s not the strongest of the species that survive, nor the most intelligent, but the one most responsive to change.", author: "Modson" },
     { quote: "The best time to start was yesterday. The next best time is now.", author: "Modson" },
-    { quote: "Success doesn’t come from what you do occasionally, it comes from what you do consistently.", author: "Modson" },
-    { quote: "Don"} ]
+    { quote: "Success doesn’t come from what you do occasionally, it comes from what you do consistently.", author: "Modson" }
+    ]
 
 
   function displayRandomQuote() {
